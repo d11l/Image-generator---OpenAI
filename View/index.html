@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/spinner.css" />
+
+    <script src="Js/main.js" defer></script>
+    <title>Image Genrator</title>
+  </head>
+  <body>
+    
+    <header>
+          <h2><a target="_blank">D11</a></h2>
+          <h3>OpenAI API </h3>
+   </header>
+
+  
+
+      <section class="showcase">
+        <form id="image-form">
+          <h1>Describe An Image</h1>
+          <div class="form-control">
+            <input type="text" id="prompt" placeholder="Enter Text" required />
+          </div>
+          <!-- size -->
+          <div class="form-control">
+            <select name="size" id="size">
+              <option value="small">Small</option>
+              <option value="medium" selected>Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Generate</button>
+        </form>
+      </section>
+
+      <section class="image">
+        <div class="image-container">
+          <h2 class="msg"></h2>
+          <img src="" alt="" id="image" />
+        </div>
+      </section>
+
+    <div class="spinner"></div>
+  </body>
+</html>

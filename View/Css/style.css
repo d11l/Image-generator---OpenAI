@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #001534;
+}
+
+
+header {
+  position: fixed;
+  background: transparent;
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Dancing Script';
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  transition: .5s;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+header a:hover {
+  opacity: .8;
+}
+
+
+.showcase {
+  height: 450px;
+  width: 100%;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.showcase h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.showcase form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #b7c9e4;
+}
+
+.showcase form input::placeholder{
+color: #1b2d45;
+}
+.showcase form input,
+form select {
+  font-size: 18px;
+  width: 400px;
+  max-width: 500px;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.showcase form input:focus,
+form select:focus{
+    outline: none;
+}
+form button {
+  font-size: 20px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: #fde24f;
+  color: #00214d;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: .3s;
+}
+
+form button:hover {
+opacity: .8;
+}
+
+.image {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.msg {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+@media (max-width: 500px) {
+  .showcase{
+      max-width: 450px;
+      margin:auto ;
+  }
+  .showcase form input,
+  form select {
+  width: 300px;
+  padding: 1rem;
+
+}
+}
+
+ @media (min-width: 768px) {
+  .showcase{
+      max-width: 750px;
+      margin:auto ;
+  }
+ }
+
+ @media (min-width: 992px) {
+  .showcase{
+      max-width: 970px;
+  }
+ }
+
+ @media (min-width: 1200px) {
+  .showcase{
+      max-width: 1170px;
+  }
+ }
